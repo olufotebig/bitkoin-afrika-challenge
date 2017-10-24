@@ -14,7 +14,7 @@ Contact at /contact
 
 - Make sure that the form cannot be submitted until the email address and repeat email address fields are identical
 
-- If there is no JavaScript enabled, add a message to the user to let them know the form will not be able to be submitted
+- If there is no JavaScript enabled, add a message to the user to let them know the form will not be able to be submitted 😕😕: It's an angular app so if JS is disabled page will not be accessible
 
 - Create a ContactService which saves the data from the contact form to the browser’s localStorage
 
