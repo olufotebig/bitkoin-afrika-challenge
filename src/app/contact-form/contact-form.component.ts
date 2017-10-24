@@ -7,10 +7,10 @@ import { Contact } from './contact';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
-  model:Contact;
+  model: Contact;
   submitted: boolean;
 
-  constructor() { 
+  constructor() {
     this.model = new Contact('', '', '', '');
     this.submitted = false;
   }
@@ -19,5 +19,16 @@ export class ContactFormComponent implements OnInit {
   }
 
   onSubmit() { this.submitted = true; }
+
+  isValid() {
+    return !this.emailsMatch(); // && other checks
+  }
+
+  emailsMatch() {
+    if (typeof (this.model["email"]) !== "undefined") {
+      return (this.model["email"] !== '') && this.model["email"] === this.model["confirmemail"];
+    }
+    return false;
+  }
 
 }
