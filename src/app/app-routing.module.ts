@@ -8,6 +8,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
   { path: '**', component: NotFoundComponent }
 ];
 

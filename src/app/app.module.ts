@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { ContactModule }     from './contact/contact.module';
+// import { ContactModule }     from './contact/contact.module';
 
 
 import { HomeComponent } from './home/home.component';
@@ -25,7 +25,7 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ContactModule,
+    // ContactModule,
     AppRoutingModule,
   ],
   providers: [],
