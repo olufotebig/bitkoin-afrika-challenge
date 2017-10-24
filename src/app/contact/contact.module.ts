@@ -1,6 +1,7 @@
 import { NgModule }       from '@angular/core';
  
 import { ContactComponent }  from './contact.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 import { ContactRoutingModule } from './contact-routing.module';
 
@@ -11,6 +12,7 @@ import { ContactRoutingModule } from './contact-routing.module';
   ],
   declarations: [
     ContactComponent,
+    ContactFormComponent
   ],
   providers: [  ]
 })
