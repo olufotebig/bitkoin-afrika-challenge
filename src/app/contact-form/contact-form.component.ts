@@ -8,12 +8,16 @@ import { Contact } from './contact';
 })
 export class ContactFormComponent implements OnInit {
   model:Contact;
-  
+  submitted: boolean;
+
   constructor() { 
     this.model = new Contact('', '', '', '');
+    this.submitted = false;
   }
 
   ngOnInit() {
   }
+
+  onSubmit() { this.submitted = true; }
 
 }
