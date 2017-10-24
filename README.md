@@ -1,6 +1,29 @@
-# BikoinAfricaChallenge
+# BikoinAfricaChallenge - Bitkoin Africa FE Application Code Challenge
+Create an Angular Universal Project (Angular 4.0.0 or above)
+Create 3 routes:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+Home at /
+About at /about
+Contact at /contact
+
+- Make the contact page a lazy loaded feature module
+
+- On the contact page, create a form with the following fields: Full Name, Email Address, Repeat Email Address, Message
+
+- Make sure that the form cannot be submitted until all fields have been submitted
+
+- Make sure that the form cannot be submitted until the email address and repeat email address fields are identical
+
+- If there is no JavaScript enabled, add a message to the user to let them know the form will not be able to be submitted
+
+- Create a ContactService which saves the data from the contact form to the browser’s localStorage
+
+- Make sure each page has the appropriate metadata for SEO purposes. E.g. the title, meta description, etc. These metadata should be rendered on the server application so it is fetchable when the link is pasted in services like Slack
+
+- Deploy your application to Heroku
+
+- Also push the code to a repository on Github
+
 
 ## Development server
 
