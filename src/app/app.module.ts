@@ -7,10 +7,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { ContactModule }     from './contact/contact.module';
+
+
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,13 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     NotFoundComponent,
     AboutComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    ContactModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
