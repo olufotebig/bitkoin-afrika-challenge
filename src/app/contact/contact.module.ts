@@ -1,12 +1,14 @@
-import { NgModule }       from '@angular/core';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { ContactComponent }  from './contact.component';
+import { ContactService } from './contact.service';
+
+import { ContactComponent } from './contact.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 import { ContactRoutingModule } from './contact-routing.module';
 
-  
+
 @NgModule({
   imports: [
     FormsModule,
@@ -16,6 +18,6 @@ import { ContactRoutingModule } from './contact-routing.module';
     ContactComponent,
     ContactFormComponent
   ],
-  providers: [  ]
+  providers: [ContactService]
 })
-export class ContactModule {}
+export class ContactModule { }

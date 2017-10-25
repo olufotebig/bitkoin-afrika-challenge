@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from './contact';
 
+import { ContactService } from '../contact/contact.service';
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
@@ -10,7 +12,7 @@ export class ContactFormComponent implements OnInit {
   model: Contact;
   submitted: boolean;
 
-  constructor() {
+  constructor(private contactService: ContactService) {
     this.model = new Contact('', '', '', '');
     this.submitted = false;
   }
@@ -18,7 +20,11 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() { this.submitted = true; }
+  onSubmit() { 
+    this.contactService.save(this.model, function(){
+      alert("Contact form saved");
+    }); 
+  }
 
   isValid() {
     return !this.emailsMatch(); // && other checks
